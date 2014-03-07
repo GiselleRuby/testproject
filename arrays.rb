@@ -8,9 +8,10 @@ puts
 #arrays
 languages = ['English', 'Norwegian', 'Ruby']
 languages.each do |lang|
-puts 'I love ' + lang + '!'
-puts 'Don\'t you?'
+	puts 'I love ' + lang + '!'
+	puts 'Don\'t you?'
 end
+
 puts
 puts languages.to_s
 puts languages.join(', ')
@@ -37,3 +38,18 @@ while true
 end
 
 puts inputs.sort
+puts
+
+width = 50
+tables = ['Table of Contents'.center(width),
+'',
+'Chapter 1: Getting '.ljust(width/2) + 'Started page 1'.rjust(width/2),
+'Chapter 2: Numbers '.ljust(width/2) + 'page 9'.rjust(width/2),
+'Chapter 3: Letters '.ljust(width/2) + 'page 13'.rjust(width/2)]
+
+tables.each do |lang|
+	puts lang
+end
+
+
+

@@ -17,16 +17,16 @@ center_width = 50
 puts 'Hi'.center(center_width)
 puts 'My name is Giselle.'.center(center_width)
 puts 'I still don\'t know.'.center(center_width)
-puts 'If I want someone in my life.'.center(center_width)
+puts 'What to do.'.center(center_width)
 
 puts 'Hi'.center(center_width)
 puts 'My name is Giselle.'.ljust(center_width)
 puts 'I still don\'t know.'.rjust(center_width)
-puts 'If I want someone'.ljust(center_width/2) + ' in my life.'.rjust(center_width/2)
+puts 'What else '.ljust(center_width/2) + ' I can do.'.rjust(center_width/2)
 
 puts 'What\'s up?'
 gets
-puts 'Your\'re fired!'
+puts 'Your\'re fired!'.upcase
 
 puts 12**2
 puts 25**0.5
