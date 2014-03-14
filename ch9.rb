@@ -86,7 +86,11 @@ def old_school_roman number
 	left = number % 500
 
 	if write > 0
-		return number_string + 'D' + old_school_roman(left)
+		if left >= 400
+			return number_string + 'CM' + old_school_roman(left-400)
+		else
+			return number_string + 'D' + old_school_roman(left)
+		end
 	end
 
 	# C = 100 
@@ -106,7 +110,11 @@ def old_school_roman number
 	left = number % 50
 
 	if write > 0
-		return number_string + 'L' + old_school_roman(left)
+		if left >= 40
+			return number_string + 'XC' + old_school_roman(left-40)
+		else
+			return number_string + 'L' + old_school_roman(left)
+		end
 	end
 
 	# X = 10 	
@@ -125,8 +133,12 @@ def old_school_roman number
 	write = number / 5
 	left = number % 5
 
-	if write > 0		
-		return number_string + 'V' + old_school_roman(left)
+	if write > 0	
+		if left >= 4
+			return number_string + 'IX' + old_school_roman(left-4)
+    else
+  		return number_string + 'V' + old_school_roman(left)
+    end 
 	end
 
 	# I = 1 
